@@ -1,3 +1,19 @@
-.index-title {
-  font-size: 100px;
+.bg-top{
+  @include pc {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 518px;
+  }
+}
+
+.openingday{
+  @include pc {
+    font-size: 60px;
+    line-height: 69px;
+    color: #fff;
+    padding-left: 48px;
+    padding-top: 48px;
+  }
 }
