@@ -1,4 +1,11 @@
+
+//上方大圖
 .bg-top{
+  height: 350px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   @include pc {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
     background-size: cover;
@@ -9,6 +16,10 @@
 }
 
 .openingday{
+  font-size: 32px;
+  color: #fff;
+  padding-top: 16px;
+  padding-left: 40px;
   @include pc {
     font-size: 60px;
     line-height: 69px;
@@ -16,4 +27,261 @@
     padding-left: 48px;
     padding-top: 48px;
   }
+}
+
+//活動標籤
+.event-btn{
+  img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  
+  p{
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  @include pc {
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin-top: 35px;
+    }
+
+    p{
+      padding-bottom: 35px;
+      font-size: 24px;
+    }
+  }
+}
+
+.event-more{
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 24px;
+  height: 112px;
+
+  @include pc {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 38px;
+    height: 201px;
+  }
+}
+
+//近期活動卡片
+.card-date{
+  font-size: 32px;
+  padding-bottom: 8px;
+  @include pc {
+    font-size: 48px;
+    padding-bottom: 12px;
+  }
+}
+
+.card-photo{
+  object-fit: cover;
+  margin-top: 16px;
+  width: 351px;
+  height: 210px;
+  @include pc {
+    width: 416px;
+    height: 255px;
+    margin-top: 12px;
+  }
+}
+
+.card-body{
+  font-family: Noto Sans TC;
+  margin-top: 8px;
+  @include pc {
+    margin-top: 12px;
+  }
+}
+
+.card-title{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  @include pc {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.bottom-btn{
+  @include pc {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+.btn-img{
+  width: 20px;
+  height: 20px;
+  @include pc {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.hover-text-decoration:hover{
+  text-decoration: underline;
+}
+
+.hover-bg-yellow:hover{
+  background-color: #FBFF22;
+  border-radius: 50px
+}
+
+//線上活動
+.gpt-img{
+  object-fit: fill;
+  height: 158px;
+  @include pc {
+    height: 317px;
+  }
+}
+
+.tag{
+  position: relative;
+  padding: 4px 16px;
+  border: 1px solid #000000;
+  font-weight: 700;
+  @include pc {
+    position: relative;
+    padding: 4px 24px;
+    border: 1px solid #000000;
+    font-weight: 700;
+  }
+}
+
+.tag::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: #000000;
+    left: 0;
+    top: 0; 
+}
+
+.tag:hover{
+  color:#fff;
+  background-color: #000000;
+}
+
+.tag:hover::before{
+  background-color: #FBFF22;
+}
+
+.btn-hover:hover{
+  color: #FBFF22;
+}
+
+.gpt-btn{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include pc {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+//跑馬燈
+.swiper-slide{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  width: auto;
+  color: #FBFF22;
+  background-color: #000000;
+  
+  @include pc {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    width: auto;
+    color: #FBFF22;
+    background-color: #000000;
+  }
+}
+
+//活動列表
+.list-space{
+  margin-top: 48px;
+  @include pc {
+    margin-top: 36px;
+    margin-bottom: 54px;
+  }
+}
+
+.h4-transform{
+  transform: translate(-50%,-50%) rotate(-4deg);
+}
+
+li{
+  &:nth-child(2n) {
+    transform: rotate(-2deg);
+  }
+  &:nth-child(3) {
+    transform: rotate(2deg);
+  }
+}
+
+.item{
+  img{
+    object-fit: cover;
+    height: 267px;
+  }
+  @include pc {
+    img{
+        object-fit: cover;
+        height: 274px;
+    }
+    p{
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+//追隨訂閱
+.email{
+  width: 327px;
+  @include pc {
+    width: 560px;
+  }
+}
+
+.submit-btn{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  padding: 16px 0;
+  margin-top: 16px;
+  @include pc {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    padding: 8px 0;
+    margin-top: 52px;
+  }
+}
+
+.submit-btn:hover{
+  color: #FBFF22;
 }

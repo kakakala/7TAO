@@ -6,7 +6,7 @@
     <nav class="container d-flex justify-content-between align-items-center mt-md-4 pb-md-4 py-12">
         <div class="d-flex">
             <a href="#" class="d-flex align-items-center me-md-5"><img class="logo-img img-fluid" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo"><h1 class="fs-2 text-primary mb-0 ms-3 fw-normal  d-none d-md-block">7TAO</h1><span class="fs-6 text-primary ms-1 fw-bolder  d-none d-md-block">活動訂票網</span></a>
-            <label class="d-flex search" for="search">
+            <label class="d-flex search mx-4" for="search">
                 <input type="search" name="search" id="search" class="fs-6 py-md-3 ps-md-4 py-1 ps-12 bg-success border border-2 border-dark" placeholder="探索活動"><i class="icofont-search-1 text-secondary fs-md-5 fs-6 border border-3 border-dark p-md-3 p-12 bg-primary"></i>
             </label>
         </div>
@@ -15,10 +15,31 @@
                 <i class="icofont-ui-file"></i>
                 REGISTER
             </a>
-            <a href="#" class=" ms-4 link-primary">
+            <a href="#" class=" ms-4 link-info text-primary">
                 <i class="icofont-ui-user"></i>
                 LOGIN
             </a>
         </div>
+        <div>
+            <button class="navbar-toggler d-flex align-items-center d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger" aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
     </nav>
+    <div class="collapse" id="hamburger">
+        <ul class="container list-unstyled border-bottom border-2 border-dark">
+            <li class="mb-3">
+                <a href="#" class="text-primary link-info">
+                    <i class="icofont-ui-file"></i>
+                    REGISTER
+                </a>
+            </li>
+            <li class="mb-3">
+                <a href="#" class=" ms-4 link-info text-primary">
+                    <i class="icofont-ui-user"></i>
+                    LOGIN
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>

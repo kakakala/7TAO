@@ -335,7 +335,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+$enable-rounded:              false !default;
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -379,8 +379,9 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
-  12: 12px,
-  32: 32px,
+  12: 12px, //custom
+  32: 32px, //custom
+  60: 60px, //custom
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -401,7 +402,8 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   #F3F1E5 !default;
-$body-color:                $gray-900 !default;
+// $body-color:                $gray-900 !default;
+$body-color: #030303 !default; // *custom
 $body-text-align:           null !default;
 
 // Links
@@ -421,7 +423,8 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0 !default; //custom
 
 
 // Grid breakpoints
@@ -578,17 +581,22 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
+  // 1: $h1-font-size,
+  // 2: $h2-font-size,
+  // 3: $h3-font-size,
+  1: $font-size-base * 4, //custom
+  2: $font-size-base * 3.75, //custom
+  3: $font-size-base * 3, //custom
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  32: $font-size-base * 2, //custom
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+// $headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0 !default; //custom
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
