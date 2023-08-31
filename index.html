@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../assets/icofont/icofont.min.css  ">
-    <script type="module" crossorigin src="/7TAO/assets/index-a039ec89.js"></script>
-    <link rel="modulepreload" crossorigin href="/7TAO/assets/main-bf9d39df.js">
-    <link rel="stylesheet" href="/7TAO/assets/main-3d19e5c8.css">
+    <script type="module" crossorigin src="/7TAO/assets/index-d34e66ba.js"></script>
+    <link rel="modulepreload" crossorigin href="/7TAO/assets/main-59be6734.js">
+    <link rel="stylesheet" href="/7TAO/assets/main-8064fd25.css">
   </head>
   <body>
     <!-- <h1 class="header">我是 header</h1>
@@ -24,7 +24,7 @@
         <div class="d-flex">
             <a href="#" class="d-flex align-items-center me-md-5"><img class="logo-img img-fluid" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo"><h1 class="fs-2 text-primary mb-0 ms-3 fw-normal  d-none d-md-block">7TAO</h1><span class="fs-6 text-primary ms-1 fw-bolder  d-none d-md-block">活動訂票網</span></a>
             <label class="d-flex search mx-4" for="search">
-                <input type="search" name="search" id="search" class="fs-6 py-md-3 ps-md-4 py-1 ps-12 bg-success border border-2 border-dark" placeholder="探索活動"><i class="icofont-search-1 text-secondary fs-md-5 fs-6 border border-3 border-dark p-md-3 p-12 bg-primary"></i>
+                <input type="search" name="search" id="search" class="fs-6 py-md-3 ps-md-4 py-1 ps-12 bg-success border border-2 border-dark" placeholder="探索活動"><button class="btn btn-dark rounded-0 border border-2 border-dark text-secondary p-md-3 p-12"><i class="icofont-search-1"></i></button>
             </label>
         </div>
         <div class="d-flex d-md-block d-none">
@@ -42,29 +42,29 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
+        <div class="collapse" id="hamburger">
+            <ul class="container list-unstyled border-bottom border-2 border-dark">
+                <li class="mb-3">
+                    <a href="#" class="text-primary link-info">
+                        <i class="icofont-ui-file"></i>
+                        REGISTER
+                    </a>
+                </li>
+                <li class="mb-3">
+                    <a href="#" class=" ms-4 link-info text-primary">
+                        <i class="icofont-ui-user"></i>
+                        LOGIN
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="collapse" id="hamburger">
-        <ul class="container list-unstyled border-bottom border-2 border-dark">
-            <li class="mb-3">
-                <a href="#" class="text-primary link-info">
-                    <i class="icofont-ui-file"></i>
-                    REGISTER
-                </a>
-            </li>
-            <li class="mb-3">
-                <a href="#" class=" ms-4 link-info text-primary">
-                    <i class="icofont-ui-user"></i>
-                    LOGIN
-                </a>
-            </li>
-        </ul>
-    </div>
 </div>
 
     <div class="container mt-md-32 mt-3 position-relative">
       <div class="bg-top">
         <p class="openingday">19 MAY 2023</p>
-        <div class="position-absolute bottom-0 text-center text-warning">
+        <div class="banner-text position-absolute bottom-0 text-warning">
           <h3 class="fs-5 mb-md-3 text-center fw-bolder">隔牆有耳-沒有草東的派對</h3>
           <p class="d-none d-md-block">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
             帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
@@ -104,7 +104,7 @@
             <p class="text-center mt-md-12 mt-2 fw-bolder text-primary">戶外</p>
           </a>
         </div>
-        <div class="col-md-2 col-4 d-flex flex-column">
+        <div class="col-lg-2 col-4 d-flex flex-column">
           <a class="event-more border border-2 border-dark text-secondary bg-primary text-break" href="#">
             探索<br>更多
           </a>
@@ -237,7 +237,7 @@
     <div class="container mt-md-32 mt-4">
       <div class="row">
         <div class="col-md-7">
-          <img class="gpt-img w-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true" alt="">
+          <img class="gpt-img w-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true" alt="ChatGPT">
         </div>
         <div class="col-md-5">
           <h4 class="fs-32 fw-bolder">切特居批踢</h4>
@@ -275,28 +275,28 @@
 
     <div class="container list-space">
       <ul class="row">
-        <li class="col-md-3 col-10 list-unstyled">
+        <li class="col-lg-3 col-md-6 col-10 list-unstyled">
           <div class="item border border-2 border-dark  p-md-3 pb-md-5 p-12 pb-32 mb-5 position-relative">
             <h4 class="position-absolute top-0 start-50 h4-transform py-md-2 px-md-3 bg-white fw-bolder fs-6 h4-transform">社群活動</h4>
             <img class="w-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/01.jpg?raw=true" alt="無聲派對-閉閉嘴dancing">
             <p class="pt-md-3 pt-12">無聲派對-閉閉嘴dancing</p>
           </div>
         </li>
-            <li class="col-md-3 col-10 list-unstyled">
+            <li class="col-lg-3 col-md-6 col-10 list-unstyled">
           <div class="item border border-2 border-dark  p-md-3 pb-md-5 p-12 pb-32 mb-5 position-relative">
             <h4 class="position-absolute top-0 start-50 h4-transform py-md-2 px-md-3 bg-white fw-bolder fs-6 ">藝文活動</h4>
             <img class="w-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/02.jpg?raw=true" alt="拯救老店大作戰">
             <p class="pt-md-3 pt-12">拯救老店大作戰</p>
           </div>
         </li>
-            <li class="col-md-3 col-10 list-unstyled">
+            <li class="col-lg-3 col-md-6 col-10 list-unstyled">
           <div class="item border border-2 border-dark  p-md-3 pb-md-5 p-12 pb-32 mb-5 position-relative">
             <h4 class="position-absolute top-0 start-50 h4-transform py-md-2 px-md-3 bg-white fw-bolder fs-6 ">自我覺察</h4>
             <img class="w-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/03.jpg?raw=true" alt="內觀修行-部落篇">
             <p class="pt-md-3 pt-12">內觀修行-部落篇</p>
           </div>
         </li>
-            <li class="col-md-3 col-10 list-unstyled">
+            <li class="col-lg-3 col-md-6 col-10 list-unstyled">
           <div class="item border border-2 border-dark  p-md-3 pb-md-5 p-12 pb-32 mb-5 position-relative">
             <h4 class="position-absolute top-0 start-50 h4-transform py-md-2 px-md-3 bg-white fw-bolder fs-6 ">聯誼活動</h4>
             <img class="w-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/04.jpg?raw=true" alt="賞櫻野餐">
