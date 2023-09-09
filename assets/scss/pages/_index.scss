@@ -283,7 +283,7 @@ li{
 
 //追隨訂閱
 .email{
-  width: 100%;
+  padding: 16px 24px;
   @include pc {
     width: 100%;
   }
@@ -302,7 +302,7 @@ li{
     color: #fff;
     background-color: #000;
     padding: 8px 0;
-    margin-top: 52px;
+    margin-top: 58px;
   }
 }
 
