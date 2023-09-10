@@ -165,7 +165,7 @@
 
 //線上活動
 .gpt-img{
-  object-fit: fill;
+  object-fit: cover;
   height: 158px;
   @include pc {
     height: 317px;
@@ -255,7 +255,7 @@
   transform: translate(-50%,-50%) rotate(-4deg);
 }
 
-li{
+.sloper{
   &:nth-child(2n) {
     transform: rotate(-2deg);
   }
